@@ -32,8 +32,8 @@ cities.sort(key=lambda x: x.kits, reverse=False)
 for i in range(B - N):
     cities[N-1].clinics += 1
     cities[N-1].kits = cities[N-1].population / cities[N-1].clinics
-    if cities[N -1].population % cities[N - 1].clinics:
-        cities[N-1].kits = cities[N-1].kits + 1
+    # if cities[N -1].population % cities[N - 1].clinics:
+    #     cities[N-1].kits = cities[N-1].kits + 1
     cities.sort(key=lambda x: x.kits, reverse=False)
 max = 0
 for c in cities:
